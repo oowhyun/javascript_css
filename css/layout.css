@@ -99,12 +99,18 @@
 }
 #faq dd{
     background-color: #ccc;
-    
-    height: 0;
+    max-height: 0;
     overflow: hidden;
     box-sizing: border-box;
+    transition: 0.5s;
+}
+#faq dt:hover + dd{
+    max-height: 400px;
+}
+#faq dd:hover{
+    max-height: 400px;
 }
 
-#faq dd div{
+/* #faq dd div{
     padding: 15px; min-height: 180px;
-}
+} */
